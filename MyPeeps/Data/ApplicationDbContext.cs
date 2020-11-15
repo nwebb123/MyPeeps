@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MyPeeps.Models;
 
 namespace MyPeeps.Data
 {
@@ -12,5 +13,6 @@ namespace MyPeeps.Data
             : base(options)
         {
         }
+        public DbSet<MyPeeps.Models.MPContact> MPContact { get; set; }
     }
 }

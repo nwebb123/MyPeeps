@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyPeeps.Models
 {
-    public class Person 
+    public class MPContact 
     {
         public int Id { get; set; }
        
@@ -18,9 +18,8 @@ namespace MyPeeps.Models
         [StringLength(25)]
         public string LastName { get; set; }
 
-        [Display(Name = "Full Name")]
-        [NotMapped]
-        public string FullName { get { return $"{FirstName} {LastName}"; } }
+        [StringLength(25)]
+        public string NickName { get; set; }
 
         [EmailAddress]
         public string Email { get; set; }
@@ -41,6 +40,8 @@ namespace MyPeeps.Models
         public int ZipCode { get; set; }
 
         public int Phone { get; set; }
+
+        public string Relationship { get; set; }
 
         public DateTimeOffset Created { get; set; }
 
