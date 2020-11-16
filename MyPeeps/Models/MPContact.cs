@@ -41,9 +41,9 @@ namespace MyPeeps.Models
 
         public int Phone { get; set; }
 
-        public string Relationship { get; set; }
+        public string Description { get; set; }
 
-        public DateTimeOffset Created { get; set; }
+        public DateTime Created { get; set; }
 
 
 

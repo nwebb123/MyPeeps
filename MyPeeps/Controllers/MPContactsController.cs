@@ -58,7 +58,7 @@ namespace MyPeeps.Controllers
         {
             if (ModelState.IsValid)
             {
-                mPContact.Created = DateTimeOffset.Now;
+                mPContact.Created = DateTime.Now;
 
                 // Use this to upload profile pic in create? Is that what Avatar is? 
 
